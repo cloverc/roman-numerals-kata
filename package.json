@@ -1,0 +1,14 @@
+{
+  "name": "roman-numerals-kata",
+  "version": "1.0.0",
+  "description": "Roman numerals converter",
+  "main": "romanNumerals.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Clover Chapman",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.5.0"
+  }
+}
