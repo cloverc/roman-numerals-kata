@@ -1,4 +1,4 @@
-# roman-numerals-kata
+# Roman Numerals Kata
 
 ### The Kata:
 
