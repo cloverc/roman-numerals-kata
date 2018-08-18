@@ -1,5 +1,25 @@
 # Roman Numerals Kata
 
+## Installation
+
+```sh
+$ git clone git@github.com:cloverc/roman-numerals-kata.git
+$ cd roman-numerals-kata
+$ npm install
+$ npm start
+```
+
+## Usage
+
+Runs from node REPL
+
+```sh
+$ node
+$ const RomanNumeral = require('../src/romanNumerals');
+$ RomanNumeral(543)
+DXLIII
+```
+
 ### The Kata:
 
 ```
