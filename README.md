@@ -9,6 +9,12 @@ $ npm install
 $ npm start
 ```
 
+## Tests
+
+```sh
+$ npm test
+```
+
 ## Usage
 
 Runs from node REPL
@@ -20,7 +26,9 @@ $ RomanNumeral(543)
 DXLIII
 ```
 
-### The Kata:
+## Approach
+
+## The Kata
 
 ```
 In whatever language you prefer, write a class that implements the

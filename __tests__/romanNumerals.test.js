@@ -1,29 +1,38 @@
 const RomanNumeral = require('../src/romanNumerals');
 
 describe('RomanNumeral', () => {
-  it('converts 1 to I', () => {
-    expect(RomanNumeral(1)).toBe('I');
-  });
-  it('converts 2 to II', () => {
-    expect(RomanNumeral(2)).toBe('II');
-  });
-  it('converts 3 to III', () => {
-    expect(RomanNumeral(3)).toBe('III');
-  });
-  it('converts 4 to IV', () => {
-    expect(RomanNumeral(4)).toBe('IV');
-  });
-  it('converts 10 to X', () => {
-    expect(RomanNumeral(10)).toBe('X');
-  });
-  it('converts 50 to L', () => {
-    expect(RomanNumeral(50)).toBe('L');
-  });
-  it('converts 100 to XL', () => {
-    expect(RomanNumeral(100)).toBe('C');
-  });
-  it('converts 1000 to M', () => {
-    expect(RomanNumeral(1000)).toBe('M');
+  const testCases = [
+    [1, 'I'],
+    [2, 'II'],
+    [3, 'III'],
+    [4, 'IV'],
+    [5, 'V'],
+    [6, 'VI'],
+    [9, 'IX'],
+    [10, 'X'],
+    [40, 'XL'],
+    [48, 'XLVIII'],
+    [50, 'L'],
+    [59, 'LIX'],
+    [90, 'XC'],
+    [93, 'XCIII'],
+    [100, 'C'],
+    [141, 'CXLI'],
+    [163, 'CLXIII'],
+    [402, 'CDII'],
+    [500, 'D'],
+    [575, 'DLXXV'],
+    [900, 'CM'],
+    [999, 'CMXCIX'],
+    [1000, 'M'],
+    [1024, 'MXXIV'],
+    [3999, 'MMMCMXCIX'],
+  ];
+
+  testCases.forEach(([input, expected]) => {
+    it(`converts ${input} to ${expected}`, () => {
+      expect(RomanNumeral(input)).toBe(expected);
+    });
   });
   it('throws an error on inputs greater than 3999', () => {
     expect(() => RomanNumeral(4000)).toThrow('Value must be a number between 1 and 3999');
