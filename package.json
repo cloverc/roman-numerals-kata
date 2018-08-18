@@ -2,7 +2,7 @@
   "name": "roman-numerals-kata",
   "version": "1.0.0",
   "description": "Roman numerals converter",
-  "main": "romanNumerals.js",
+  "main": "src/romanNumerals.js",
   "scripts": {
     "test": "jest"
   },
