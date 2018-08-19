@@ -40,4 +40,7 @@ describe('RomanNumeral', () => {
   it('throws an error on inputs less than 1', () => {
     expect(() => RomanNumeral(0)).toThrow('Value must be a number between 1 and 3999');
   });
+  it('throws an error if input is a string', () => {
+    expect(() => RomanNumeral('one')).toThrow('Value must be a number between 1 and 3999');
+  });
 });

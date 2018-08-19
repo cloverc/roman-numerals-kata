@@ -15,7 +15,7 @@ const ROMAN = {
 };
 
 const RomanNumeral = (number) => {
-  if (number < 1 || number > 3999 || Number.isNaN(number)) {
+  if (number < 1 || number > 3999 || typeof (number) !== 'number') {
     throw new Error('Value must be a number between 1 and 3999');
   }
   let result = '';
